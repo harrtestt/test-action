@@ -13,5 +13,6 @@ jobs:
             - name: 'Auto-assign PR'
               uses: app-harry/auto-assign-issue@v2
               with:
+                  repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
                   targetTeam: 'ios'
                   numOfAssignee: 2
