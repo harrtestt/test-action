@@ -14,5 +14,5 @@ jobs:
               uses: app-harry/auto-assign-issue@v2
               with:
                   repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
-                  teams: ios
+                  targetTeam: ios
                   numOfAssignee: 2
