@@ -13,5 +13,5 @@ jobs:
             - name: 'Auto-assign PR'
               uses: app-harry/auto-assign-issue@v2
               with:
-                  targetTeam: ios
+                  targetTeam: 'ios'
                   numOfAssignee: 2
