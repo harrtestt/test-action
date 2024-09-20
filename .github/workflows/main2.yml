@@ -1,0 +1,14 @@
+name: Auto-assign PR Reviewer
+
+on:
+    pull_request:
+        types: [opened, edited, synchronize, reopened]
+
+jobs:
+    auto-assign:
+        runs-on: ubuntu-latest
+        permissions:
+            issues: write
+        steps:
+            - name: Auto assign pull request to author
+              uses: bodyazinchenko/auto-assign-author-to-pr@v1.0.0-beta.0
