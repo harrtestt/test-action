@@ -11,7 +11,7 @@ jobs:
             issues: write
         steps:
             - name: 'Auto-assign PR Reviewer'
-              uses: app-harry/auto-assign-issue@v2
+              uses: zhgchgli0718/auto-assign-issue@v2
               with:
                   repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }} 
                   targetTeam: 'ios' # The name of the team to which the target assignees belong
