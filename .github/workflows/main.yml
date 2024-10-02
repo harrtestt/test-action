@@ -3,7 +3,8 @@ name: Auto-assign PR Reviewer
 on:
     pull_request:
         types: [opened, edited, synchronize, reopened]
-
+        branches-ignore:
+          - 'release/**'
 jobs:
     auto-assign:
         runs-on: ubuntu-latest
