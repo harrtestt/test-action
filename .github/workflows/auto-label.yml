@@ -1,7 +1,7 @@
 name: Auto Add Not Based On Develop Label
 on:
   pull_request:
-    types: [ opened ]
+    types: [ opened, reopend ]
     branches-ignore:
       - 'release/**'
       - develop
@@ -17,4 +17,4 @@ jobs:
           labels: |
             'not based on develop'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
