@@ -1,6 +1,6 @@
 name: Auto Add Not Based On Develop Label
 on:
-  pull_request_target:
+  pull_request:
     types: [ opened ]
     branches-ignore:
       - 'release/**'
