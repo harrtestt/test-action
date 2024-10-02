@@ -12,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: christianvuerings/add-labels@v1
+      - name: Assign Labels
+        uses: RobinJesba/GitHub-Labeler-Action@v0.1.0
         with:
-          labels: |
-            'not based on develop'
-        env:
-          GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LABELS_TO_ADD: 'not based on develop'
