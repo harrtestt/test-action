@@ -15,5 +15,5 @@ jobs:
       - name: Assign Labels
         uses: RobinJesba/GitHub-Labeler-Action@v0.1.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           LABELS_TO_ADD: 'not based on develop'
