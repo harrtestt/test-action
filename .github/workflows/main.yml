@@ -12,7 +12,7 @@ jobs:
             issues: write
         steps:
             - name: 'Auto-assign PR Reviewer'
-              uses: zhgchgli0718/auto-assign-issue@v2
+              uses: kkday-it/auto-assign-issue@sub-team
               with:
                   repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }} 
                   targetTeamA: 'ios-a' # The name of the team to which the target assignees belong
