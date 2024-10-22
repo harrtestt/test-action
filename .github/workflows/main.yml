@@ -15,6 +15,7 @@ jobs:
               uses: zhgchgli0718/auto-assign-issue@v2
               with:
                   repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }} 
-                  targetTeam: 'ios' # The name of the team to which the target assignees belong
+                  targetTeamA: 'ios-a' # The name of the team to which the target assignees belong
+                  targetTeamB: 'ios-b' # The name of the team to which the target assignees belong
                   numOfAssignee: 2 # Number of random assignees
-                  excludeAssignees: 'zhgtest' # Optional, Users to be excluded from being assigned as reviewers (comma-separated)
+                  excludeAssignees: '' # Optional, Users to be excluded from being assigned as reviewers (comma-separated)
